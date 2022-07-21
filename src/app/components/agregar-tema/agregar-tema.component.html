@@ -1,0 +1,179 @@
+<div id="seccion_header">
+  <h4>Agregar temas</h4>
+</div>
+<nav class="navbar navbar-expand-sm">
+</nav>
+<br />
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+      aria-controls="home" aria-selected="true">Registro de temas</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab"
+      aria-controls="contact" aria-selected="false">Agregar actividades a tema</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="row">
+      <div class="col-md-1">
+        <p class="Negritas">
+          Área de Conocimiento
+        </p>
+      </div>
+      <div class="col-md-11" style="align-items: center;">
+        <br>
+        <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Opcion multiple</option>
+          <option value="2">Respuesta libre</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" id="tabla">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Tema Base</th>
+              <th scope="col"> </th>
+              <th scope="col"> </th>
+              <th scope="col">Agregar actividades</th>
+              <th scope="col">Comentarios</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><input type="text" name="Nombre" placeholder="Nombre" style="width: 100%;"></th>
+              <td><input type="text" name="Descripción" placeholder="Descripción" style="width: 100%;"></td>
+              <td><input type="checkbox" name="Tema base" style="width: 100%;"></td>
+              <td><a href=""><i class="fa-solid fa-circle-check" style="font-size: 2em; color: rgb(16, 163, 29);"></i></a></td>
+              <td><a href=""><i class="fa-solid fa-circle-xmark" style="font-size: 2em; color: rgb(214, 19, 19);"></i></a></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><p class="palabras">Programación Orientada a Objetos</p></th>
+              <td><p class="palabras">Es un paradigma de programación que viene a innovar la forma de obtener resultados. Los objetos manipulan los datos de entrada para la obtención de datos de salida específicos, donde cada objeto ofrece una funcionalidad especial.</p></td>
+              <td>Tema base</td>
+              <td><a href=""><i class="fa-solid fa-pen" style="font-size: 1em; color: rgb(8, 148, 184);"></i></a></td>
+              <td><a href=""><i class="fa-solid fa-circle-xmark" style="font-size: 1em; color: rgb(214, 19, 19);"></i></a></td>
+              <td><a href=""><i class="fa-solid fa-plus" style="font-size: 2em; color: rgb(8, 148, 184);"></i></a></td>
+              <td><button type="button" class="btn btn-info" style="color: #fff">Ver comentarios</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row" style="text-align:center;">
+      <div class="col-md-12">
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-primary">
+            << </button>
+          <button type="button" class="btn btn-outline-primary">1</button>
+          <button type="button" class="btn btn-outline-primary">>></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" style="margin: 1em;">
+    <div class="row">
+      <div class="col-md-1">
+        <p class="Negritas" style="text-align: left;">Tema</p>
+      </div>
+      <div class="col-md-11">
+        <select class="form-select" aria-label="Disabled select example" disabled>
+          <option selected>Psicologia de color</option>
+          <option value="1">Programación Orientada a Objetos</option>
+        </select>
+      </div>
+    </div>
+    <div class="row marginTop">
+      <div class="col-md-1">
+        <p class="Negritas" style="text-align: left;">
+          Nombre de la actividad
+        </p>
+      </div>
+      <div class="col-md-11">
+        <input type="text" name="Nombre-Actividad" id="NombreAct" style="width:100%;">
+      </div>
+    </div>
+    <div class="row marginTop">
+      <div class="col-md-1">
+        <p class="Negritas" style="text-align: left;">Tipo de actividad</p>
+      </div>
+      <div class="col-md-11">
+        <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Lectura</option>
+          <option value="2">Video</option>
+          <option value="3">Juego</option>
+          <option value="4">Laboratorio</option>
+          <option value="5">QUIZ</option>
+        </select>
+      </div>
+    </div>
+    <div class="row marginTop">
+      <div class="col-md-1">
+        <p class="Negritas" style="text-align: left;">Tema prerrequisito</p>
+      </div>
+      <div class="col-md-11">
+        <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Tema 1</option>
+          <option value="2">Tema 2</option>
+          <option value="3">Tema 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="row marginTop">
+      <div class="col-md-1">
+        <button class="btn btn-success">Guardar</button>
+      </div>
+      <div class="col-md-1">
+        <button type="button" class="btn btn-warning" style="color:#fff;">Cancelar</button>
+      </div>
+    </div>
+    <div class="row marginTop" style="  padding: 1vh; text-align: center;">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre Actividad</th>
+            <th scope="col">Descripción</th>
+            <th scope="col"> </th>
+            <th scope="col"> </th>
+            <th scope="col">valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>A sumar, ¿Cuánto es 1 + 1?</td>
+            <td><input type="checkbox" name="Tema base" style="width: 100%;"></td>
+            <td><a href=""><i class="fa-solid fa-pen" style="font-size: 1.1em; color: rgb(8, 148, 184);"></i></a></td>
+            <td><a href=""><button class="btn btn-danger">Eliminar</button></a></td>
+            <td><p>60%</p></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Color, para que sirven</td>
+            <td>Tema base</td>
+            <td><a href=""><i class="fa-solid fa-pen" style="font-size: 1.1em; color: rgb(8, 148, 184);"></i></a></td>
+            <td><a href=""><button class="btn btn-danger">Eliminar</button></a></td>
+            <td>40%</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
